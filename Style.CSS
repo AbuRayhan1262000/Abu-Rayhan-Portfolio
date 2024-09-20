@@ -1,0 +1,135 @@
+*{
+    font-family: "Roboto", system-ui;
+    color:white;
+}
+body{
+    background-color: #222;
+    min-height: 100vh;
+    margin: 0;
+}
+/* navbar start */
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color:rgba(34,34,34,0.25);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #333;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nav-left{
+    display: flex;
+}
+.logo{
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+.nav-name{
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.nav-right{
+    margin-left: auto;
+}
+.nav-item-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-items{
+    margin: 1rem;
+    list-style-type: none;
+}
+.nav-items-link{
+    text-decoration: none;
+}
+.nav-items-link:hover{
+    color:#3b82f6;
+}
+/* navbar end */
+/* navbar section responsive start */
+@media(max-width:873px) {
+    .navbar-container{
+        display: block;
+    }
+    .nav-item-container{
+        padding:0;
+    } 
+
+}
+/* navbar section responsive end */
+
+
+/* container section responsive start */
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+
+}
+/* container section responsive end */
+
+
+/* hero section responsive start */
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+/* hero section responsive end */
+
+/* container */
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* hero section start*/
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+}
+.hero-img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+.hero-left,
+.hero-right{
+    width: 100%;
+}
+@media(min-width:992px){
+    .hero-left{
+        width: 40%;
+    }
+    .hero-right{
+        width: 60%;
+    }
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.description{
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+/* hero section end */
